@@ -21,17 +21,55 @@
       document.getElementById('result').innerHTML = result
 
        }
+
+       function subtrair(){
+
+      number1=  parseInt( document.getElementById('number1').value)
+      number2=  parseInt( document.getElementById('number2').value)
+
+      result = number1-number2
+
+      document.getElementById('result').innerHTML = result
+
+       }
+
+       function multiplicar(){
+
+      number1=  parseInt( document.getElementById('number1').value)
+      number2=  parseInt( document.getElementById('number2').value)
+
+      result = number1*number2
+
+      document.getElementById('result').innerHTML = result
+
+       }
+
+       function dividir(){
+
+      number1=  parseInt( document.getElementById('number1').value)
+      number2=  parseInt( document.getElementById('number2').value)
+
+      result = number1/number2
+
+      document.getElementById('result').innerHTML = result
+
+       }
     </script>
 </head>
 <body>
 	<br>
-    <center><h1 "><label style="font-family: Arial">The Rock</label></h1></center>
+    <center><h1 "><label style="font-family: Arial">Calculadora</label></h1></center>
    
    <br>
    <h1 id="result" ></h1>
+   <center>
     <input type="number" id="number1" placeholder="Primeiro numero">    
     <input type="number" id="number2" placeholder="SEgundo numero">
+    
      <input type="button" value="somar" onclick="somar()">
-
+     <input type="button" value="subtrair" onclick="subtrair()">
+     <input type="button" value="multiplicar" onclick="multiplicar()">
+     <input type="button" value="dividir" onclick="dividir()">
+    </center>
 </body>
 </html>
